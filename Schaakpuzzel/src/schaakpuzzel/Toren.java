@@ -12,9 +12,15 @@ package schaakpuzzel;
 public class Toren extends Stuk {
 
     public Toren () {
-        this.code = 1;
+        code = 1;
     }
+
+        public final char letter='T';
 
     public boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom){
     return stuk.getRij() == rij || stuk.getKolom() == kolom;}
+
+    public char letterVoorStuk (){
+      return 'T';
+    }
 }

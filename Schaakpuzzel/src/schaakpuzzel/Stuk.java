@@ -63,4 +63,6 @@ public abstract class Stuk {
     }
 
     abstract boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom);
+
+    abstract char letterVoorStuk ();
 }

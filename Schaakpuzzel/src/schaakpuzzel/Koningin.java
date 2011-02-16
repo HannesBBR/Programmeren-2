@@ -11,8 +11,10 @@ package schaakpuzzel;
  */
 public class Koningin extends Stuk {
 
+
     public Koningin () {
         code=0;
+        
     }
 
     public boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom){
@@ -20,5 +22,10 @@ public class Koningin extends Stuk {
                stuk.getRij() == rij || stuk.getKolom() == kolom ||
                stuk.getRij() + stuk.getKolom() == rij + kolom ||
                stuk.getRij() + kolom == rij + stuk.getKolom();}
+
+    public char letterVoorStuk (){
+      return 'D';
+    }
+
 }
 

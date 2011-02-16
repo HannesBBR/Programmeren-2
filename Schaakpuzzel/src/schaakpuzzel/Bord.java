@@ -24,21 +24,6 @@ public class Bord {
         stukken = new Stuk[8][8];
     }
 
-    /**
-     * De overeenkomstige letter voor het gegeven stuk.
-     */
-    public char letterVoorStuk (Stuk stuk) {
-        int code = stuk.getCode();
-        if (code == 0) {
-            return 'D';
-        } else if (code == 1) {
-            return 'T';
-        } else if (code == 2) {
-            return 'L';
-        } else { // code == 3
-            return 'P';
-        }
-    }
 
     /**
      * String-representatie van een bord.
@@ -50,7 +35,7 @@ public class Bord {
             for (int kol = 0; kol < 8; kol++) {
                 str += " ";
                 if (stukken[rij][kol] != null)
-                    str += letterVoorStuk (stukken[rij][kol]);
+                    str += stukken[rij][kol].letterVoorStuk();
                 else if ((rij + kol) % 2 == 0)
                     str += " ";
                 else
