@@ -62,7 +62,7 @@ public abstract class Stuk {
         this.kolom = kolom;
     }
 
-    abstract boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom);
+    abstract boolean stukBedreigtPositie (int rij, int kolom);
 
     abstract char letterVoorStuk ();
 }

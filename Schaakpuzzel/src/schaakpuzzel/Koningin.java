@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package schaakpuzzel;
 
 /**
@@ -17,11 +12,11 @@ public class Koningin extends Stuk {
         
     }
 
-    public boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom){
+    public boolean stukBedreigtPositie (int rij, int kolom){
     return
-               stuk.getRij() == rij || stuk.getKolom() == kolom ||
-               stuk.getRij() + stuk.getKolom() == rij + kolom ||
-               stuk.getRij() + kolom == rij + stuk.getKolom();}
+               getRij() == rij || getKolom() == kolom ||
+               getRij() + getKolom() == rij + kolom ||
+               getRij() + kolom == rij + getKolom();}
 
     public char letterVoorStuk (){
       return 'D';

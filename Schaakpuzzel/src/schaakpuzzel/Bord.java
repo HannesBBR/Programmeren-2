@@ -67,8 +67,8 @@ public class Bord {
         for (int r = 0; r < 8; r++)
             for (int k = 0; k < 8; k++)
                 if (stukken[r][k] != null)
-                    if (stuk.stukBedreigtPositie(stukken[r][k], rij, kol) ||
-                          stuk.stukBedreigtPositie(stuk, r, k))
+                    if (stukken[r][k].stukBedreigtPositie(rij, kol) ||
+                          stuk.stukBedreigtPositie(r, k))
                         return false;
         return true;
     }

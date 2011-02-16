@@ -16,10 +16,12 @@ public class Loper extends Stuk {
     }
 
 
-    public boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom){
+    public boolean stukBedreigtPositie (int rij, int kolom){
     return
-               stuk.getRij() + stuk.getKolom() == rij + kolom ||
-               stuk.getRij() + kolom == rij + stuk.getKolom();}
+               getRij() + getKolom() == kolom ||
+               getRij() + kolom == rij + getKolom();
+
+    }
 
     public char letterVoorStuk (){
       return 'L';

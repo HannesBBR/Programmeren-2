@@ -17,6 +17,7 @@ public class Schaakpuzzel {
         hm.put('L',new Loperfabriek());
         hm.put('D',new Koninginfabriek());
         hm.put('T',new Torenfabriek());
+        hm.put('A',new Amazonefabriek());
 
         Stuk stuk = hm.get(kar).createStuk();
 

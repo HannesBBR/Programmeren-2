@@ -17,8 +17,8 @@ public class Toren extends Stuk {
 
         public final char letter='T';
 
-    public boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom){
-    return stuk.getRij() == rij || stuk.getKolom() == kolom;}
+    public boolean stukBedreigtPositie (int rij, int kolom){
+    return getRij() == rij || getKolom() == kolom;}
 
     public char letterVoorStuk (){
       return 'T';

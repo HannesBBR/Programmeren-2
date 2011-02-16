@@ -11,9 +11,9 @@ public class Paard extends Stuk {
     }
 
 
-    public boolean stukBedreigtPositie (Stuk stuk, int rij, int kolom){
-    int dr = stuk.getRij() - rij;
-            int dk = stuk.getKolom() - kolom;
+    public boolean stukBedreigtPositie (int rij, int kolom){
+    int dr = getRij() - rij;
+            int dk = getKolom() - kolom;
             return dr * dr + dk * dk == 5;  // [!] wiskundig truukje}
     }
 
